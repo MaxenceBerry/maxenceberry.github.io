@@ -1,11 +1,13 @@
 # Notes
 ## Design
 ### Charte graphique
+### Todo
+Header : fond powder blue, oswald, police prussian blue 
+Nav bar : fond powder blue, oswald, police prussian blue
+main : fond powder blue, bloc dusk blue, police powder blue
 #### Polices
-
 Title : Oswald
 Body : Roboto/Ubuntu
-
 #### Palette de couleur
 ##### Online found
 --amber-glow: #f99e1aff;

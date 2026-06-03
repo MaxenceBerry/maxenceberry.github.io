@@ -8,12 +8,25 @@
     --prussian-blue: #0e1326;
 }
 
+header {
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--powder-blue);
+    color: var(--prussian-blue);
+    margin-bottom: 40px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.8em;
+    color: var(--powder-blue);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: var(--prussian-blue);
+    background-color: var(--powder-blue);
     color: var(--powder-blue);
     text-align: center;
 }
@@ -26,11 +39,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px;
 }
 
-header {
-    margin-bottom: 40px;
-}
+
 
 main {
+    font-family: 'Roboto', sans-serif;
     max-width: 800px;
     margin: 0 auto;
     background-color: var(--powder-blue);
@@ -39,11 +51,13 @@ main {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
-
-footer {
-    margin-top: 40px;
-    font-size: 0.8em;
-    color: var(--powder-blue);
+.projet-bloc {
+    background-color: var(--dusk-blue);
+    color: var(--powder-blue);         /* Couleur du texte pour contraster */
+    padding: 20px;
+    margin-bottom: 20px;               /* Espace entre les blocs */
+    border-radius: 8px;                /* Coins arrondis pour le côté "jouet" */
+    border: 1px solid var(--amber-glow); /* Optionnel : une petite bordure ambre pour le rappel tech */
 }
 
 img {
