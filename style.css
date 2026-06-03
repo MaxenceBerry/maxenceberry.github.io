@@ -6,57 +6,77 @@
     --powder-blue: #a8b8cf;
     --dusk-blue: #405275;
     --prussian-blue: #0e1326;
+    --white: #ffffff;
 }
 
+/* Fond de toute la page */
+body {
+    background-color: var(--powder-blue);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Texte header en blanc */
 header {
     font-family: 'Oswald', sans-serif;
-    background-color: var(--powder-blue);
-    color: var(--prussian-blue);
+    background-color: var(--dusk-blue); /* Ajusté pour cohérence */
+    color: var(--white);
+    padding: 20px;
     margin-bottom: 40px;
-}
-
-footer {
-    margin-top: 40px;
-    font-size: 0.8em;
-    color: var(--powder-blue);
-}
-
-body {
-    text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
     background-color: var(--dusk-blue);
-    color: var(--powder-blue);
+    color: var(--white); /* Titres en blanc */
     margin: 0;
     padding: 10px;
 }
 
-
-
 main {
-    font-family: 'Roboto', sans-serif;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    background-color: var(--powder-blue); /* Main fond powder blue */
 }
+
+/* --- Gestion des Projets Bloc --- */
+.projet-bloc {
+    padding: 0 20px; /* Padding gauche et droite pour le bloc */
+    margin-bottom: 30px;
+}
+
 .projet-bloc h2 {
-    font-family: 'Oswald', sans-serif;
-    background-color: var(--dusk-blue);
-    color: var(--powder-blue);         /* Couleur du texte pour contraster */
-    padding: 20px;
-    margin-bottom: 20px;               /* Espace entre les blocs */
-    border-radius: 8px;                /* Coins arrondis pour le côté "jouet" */
+    margin-bottom: 0; /* Enlève l'espace entre H2 et P */
+    border-radius: 8px 8px 0 0;
 }
+
 .projet-bloc p {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--powder-blue);
-    color: var(--prussian-blue);         /* Couleur du texte pour contraster */
+    background-color: var(--white); /* Fond blanc */
+    color: var(--prussian-blue);
     padding: 20px;
-    margin-bottom: 20px;               /* Espace entre les blocs */
-    border-radius: 8px;                /* Coins arrondis pour le côté "jouet" */
+    margin-top: 0; /* Enlève l'espace entre H2 et P */
+    border-radius: 0 0 8px 8px;
+}
+
+/* --- Style des liens type Itch.io --- */
+a {
+    display: inline-block;
+    background-color: var(--amber-glow);
+    color: var(--prussian-blue);
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.8em;
+    color: var(--prussian-blue);
 }
 
 img {
