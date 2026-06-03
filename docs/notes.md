@@ -2,9 +2,6 @@
 ## Design
 ### Charte graphique
 ### Todo
-
-projet-bloc : header background dusk blue, text Oswlad, text color powder blue
-project bloc : p background powder blue, text robot, text color prussian-blue
 #### Polices
 Title : Oswald
 Body : Roboto/Ubuntu
@@ -36,9 +33,3 @@ Body : Roboto/Ubuntu
 --powder-blue: #a8b8cfff;
 --dusk-blue: #405275ff;
 --prussian-blue: #0e1326ff;
-
-amber-glow : bouton 1
-dodger-blue : bouton 2
-powder-blue : body, text, white
-dusk-blue : header, bouton 3
-prussian-blue : footer, texte, black

@@ -34,7 +34,7 @@ header {
     padding: 20px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
     background-color: var(--dusk-blue);
     color: var(--white);
@@ -53,6 +53,10 @@ main > section > h2 {
 }
 
 .projet-bloc h2 {
+    border-radius: 8px 8px 0 0;
+}
+
+.projet-bloc h3 {
     border-radius: 8px 8px 0 0;
 }
 
