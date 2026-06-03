@@ -42,7 +42,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
-.projet-bloc h1, h2, h3, h4, h5, h6 {
+.projet-bloc h2 {
     font-family: 'Oswald', sans-serif;
     background-color: var(--dusk-blue);
     color: var(--powder-blue);         /* Couleur du texte pour contraster */
