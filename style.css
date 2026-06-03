@@ -1,32 +1,55 @@
+/* Import des polices depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --amber-glow: #f99e1aff;
+    --dodger-blue: #218ffeff;
+    --powder-blue: #a8b8cfff;
+    --dusk-blue: #405275ff;
+    --prussian-blue: #0e1326ff;
+}
+
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: var(--prussian-blue);
+    color: var(--powder-blue);
     text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--dusk-blue);
+    color: var(--powder-blue);
+    margin: 0;
+    padding: 10px;
 }
 
 header {
     margin-bottom: 40px;
 }
 
-h1 {
-    color: #2c3e50;
-}
-
 main {
     max-width: 800px;
     margin: 0 auto;
-    background: white;
+    background-color: var(--powder-blue);
+    color: var(--prussian-blue);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 footer {
     margin-top: 40px;
     font-size: 0.8em;
-    color: #777;
+    color: var(--powder-blue);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
 }
