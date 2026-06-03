@@ -44,7 +44,7 @@ h1, h2 {
 }
 
 main > section > h2 {
-    margin-bottom: 20px; /* Ajoute l'espace souhaité après ce titre spécifique */
+    margin-bottom: 40px; /* Ajoute l'espace souhaité après ce titre spécifique */
 }
 
 /* Espacement et présentation des blocs */
@@ -60,7 +60,7 @@ main > section > h2 {
     font-family: 'Roboto', sans-serif;
     background-color: var(--white);
     color: var(--prussian-blue);
-    padding: 20px;
+    padding: 10px;
     margin-top: 0;
     margin-bottom: 0;
     border-radius: 0 0 8px 8px;
