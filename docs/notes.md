@@ -2,9 +2,9 @@
 ## Design
 ### Charte graphique
 ### Todo
-Header : fond powder blue, oswald, police prussian blue 
-Nav bar : fond powder blue, oswald, police prussian blue
-main : fond powder blue, bloc dusk blue, police powder blue
+
+projet-bloc : header background dusk blue, text Oswlad, text color powder blue
+project bloc : p background powder blue, text robot, text color prussian-blue
 #### Polices
 Title : Oswald
 Body : Roboto/Ubuntu
