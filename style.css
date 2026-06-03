@@ -9,79 +9,66 @@
     --white: #ffffff;
 }
 
-/* Fond de toute la page */
 body {
     background-color: var(--powder-blue);
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: 20px; /* Espace extérieur */
     padding: 20px;
+    border: 5px solid var(--dusk-blue); /* Bordure body */
     text-align: center;
 }
 
-/* Texte header en blanc */
 header {
     font-family: 'Oswald', sans-serif;
-    background-color: var(--dusk-blue); /* Ajusté pour cohérence */
+    background-color: var(--dusk-blue);
     color: var(--white);
-    padding: 20px;
     margin-bottom: 40px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
     font-family: 'Oswald', sans-serif;
     background-color: var(--dusk-blue);
-    color: var(--white); /* Titres en blanc */
+    color: var(--white);
     margin: 0;
     padding: 10px;
+    border-radius: 8px 8px 0 0; /* Arrondi pour tous les h2 */
 }
 
 main {
     max-width: 800px;
     margin: 0 auto;
-    background-color: var(--powder-blue); /* Main fond powder blue */
 }
 
-/* --- Gestion des Projets Bloc --- */
+/* Espacement entre les blocs projets */
 .projet-bloc {
-    padding: 0 20px; /* Padding gauche et droite pour le bloc */
-    margin-bottom: 30px;
+    margin-bottom: 50px; 
 }
 
 .projet-bloc h2 {
-    margin-bottom: 0; /* Enlève l'espace entre H2 et P */
     border-radius: 8px 8px 0 0;
 }
 
 .projet-bloc p {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--white); /* Fond blanc */
+    background-color: var(--white);
     color: var(--prussian-blue);
     padding: 20px;
-    margin-top: 0; /* Enlève l'espace entre H2 et P */
+    margin-top: 0;
+    margin-bottom: 0;
     border-radius: 0 0 8px 8px;
 }
 
-/* --- Style des liens type Itch.io --- */
-a {
-    display: inline-block;
-    background-color: var(--amber-glow);
-    color: var(--prussian-blue);
-    padding: 5px 15px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    margin: 10px 0;
-}
-
-footer {
-    margin-top: 40px;
-    font-size: 0.8em;
-    color: var(--prussian-blue);
+/* Grille Responsive pour les images */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
+    width: 100%;
+    height: 200px; /* Hauteur fixe pour uniformiser la grille */
+    object-fit: cover; /* Recadre l'image pour qu'elle ne soit pas déformée */
+    border: 2px solid var(--dusk-blue);
 }
