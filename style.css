@@ -74,7 +74,7 @@ h1, h2 {
     padding: 0;
 }
 
-.projet-content a {
+a {
     display: inline-block;
     background-color: var(--amber-glow);
     color: var(--prussian-blue);
@@ -84,6 +84,7 @@ h1, h2 {
     border-radius: 4px;
     margin: 10px 0;
     text-align: center;
+    align-self: center;
 }
 
 img {
@@ -92,10 +93,11 @@ img {
     object-fit: contain;
     max-width: 600px;   /* Ne dépasse pas 600px de large */
     height: 250px;      /* Hauteur fixe pour un rendu uniforme */
-    object-fit: cover;  /* Recadre l'image (coupe les bords) au lieu de déformer ou zoomer */
+    object-fit: scale-down;  /* Recadre l'image (coupe les bords) au lieu de déformer ou zoomer */
     border: 2px solid var(--amber-glow);
     display: block;
     margin: 15px 0;
+    align-self: center;
 }
 
 
