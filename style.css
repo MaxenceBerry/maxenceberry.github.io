@@ -2,6 +2,7 @@
 
 :root {
     --amber-glow: #f99e1a;
+    --dodger-blue: #218ffeff;
     --powder-blue: #a8b8cf;
     --dusk-blue: #405275;
     --prussian-blue: #0e1326;
@@ -77,10 +78,22 @@ h1, h2 {
     text-align: left;
 }
 
-a {
+
+.btn-main{
     display: inline-block;
     background-color: var(--amber-glow);
     color: var(--prussian-blue);
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 10px 0;
+    text-align: center;
+}
+.btn-secondary{
+    display: inline-block;
+    background-color: var(--dodger-blue);
+    color: var(--white);
     padding: 8px 16px;
     text-decoration: none;
     font-weight: bold;
