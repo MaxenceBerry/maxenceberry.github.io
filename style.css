@@ -42,6 +42,12 @@ h1, h2, h3 {
     padding: 10px;
     border-radius: 8px 8px 0 0;
 }
+h3 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--dusk-blue);
+    margin: 0;
+    border-radius: 8px 8px 0 0;
+}
 
 main > section > h2 {
     margin-bottom: 40px; /* Ajoute l'espace souhaité après ce titre spécifique */
