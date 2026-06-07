@@ -96,8 +96,8 @@ img {
     height: 250px;      /* Hauteur fixe pour un rendu uniforme */
     object-fit: scale-down;  /* Recadre l'image (coupe les bords) au lieu de déformer ou zoomer */
     border: 2px solid var(--amber-glow);
-    display: block;
-    margin: 15px 0;
+    display: block;    /* Obligatoire pour le centrage */
+    margin: 15px auto; /* 15px en haut/bas, 'auto' centre gauche/droite */
 }
 
 
