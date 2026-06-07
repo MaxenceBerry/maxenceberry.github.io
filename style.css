@@ -16,13 +16,12 @@ body {
     text-align: center;
 }
 
-/* Bordure fine uniquement sur le main */
 main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     background-color: var(--powder-blue);
-    border: 2px solid var(--dusk-blue); /* Bordure fine ici */
+    border: 2px solid var(--dusk-blue);
     border-radius: 8px;
 }
 
@@ -44,12 +43,11 @@ h1, h2, h3, h4 {
 }
 
 main > section > h2 {
-    margin-bottom: 40px; /* Ajoute l'espace souhaité après ce titre spécifique */
+    margin-bottom: 40px;
 }
 
-/* Espacement et présentation des blocs */
 .projet-bloc {
-    margin-bottom: 40px; /* Espace entre chaque bloc projet */
+    margin-bottom: 40px;
 }
 
 .projet-bloc h2 {
@@ -71,7 +69,6 @@ main > section > h2 {
     text-align: left;
 }
 
-/* Lien orange (amber-glow) rétabli */
 a {
     display: inline-block;
     background-color: var(--amber-glow);
@@ -94,37 +91,35 @@ a {
 img {
     width: 100%;
     height: 200px;
-    object-fit: contain;   /* Garde l'image entière sans zoom */
+    object-fit: contain;
     border: 2px solid var(--amber-glow);
-    background-color: transparent; /* L'image affiche le fond du main à travers */
+    background-color: transparent;
 }
-/* --- Mise à jour pour les H3 --- */
 h3 {
     font-family: 'Oswald', sans-serif;
-    color: var(--prussian-blue); /* Couleur demandée */
-    background-color: var(--white); /* Fond blanc */
-    margin: 0;
+    color: var(--prussian-blue);
+    background-color: var(--white);
+    margin: 10px;
     padding: 10px;
     border-radius: 8px 8px 0 0;
-    text-align: left; /* Optionnel : pour aligner avec le texte des paragraphes */
+    text-align: left;
 }
 h4 {
     font-family: 'Oswald', sans-serif;
-    color: var(--prussian-blue); /* Couleur demandée */
-    background-color: var(--white); /* Fond blanc */
-    margin: 0;
+    color: var(--prussian-blue);
+    background-color: var(--white);
+    margin: 10px;
     padding: 10px;
     border-radius: 8px 8px 0 0;
-    text-align: left; /* Optionnel : pour aligner avec le texte des paragraphes */
+    text-align: left;
 }
 
-/* --- Nouvelles règles pour les listes --- */
 ul, ol {
     background-color: var(--white);
-    color: #000000; /* Écriture en noir pur */
-    padding: 10px 10px 10px 40px; /* Padding à gauche pour laisser place aux puces */
+    color: #000000;
+    padding: 10px 10px 10px 40px;
     margin: 0;
-    border-radius: 0 0 8px 8px; /* Pour se raccorder aux blocs précédents */
+    border-radius: 0 0 8px 8px;
     text-align: left;
 }
 
