@@ -90,15 +90,14 @@ a {
 }
 
 img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    max-width: 600px;   /* Ne dépasse pas 600px de large */
-    height: 250px;      /* Hauteur fixe pour un rendu uniforme */
-    object-fit: scale-down;  /* Recadre l'image (coupe les bords) au lieu de déformer ou zoomer */
+    display: block;        /* Permet le centrage */
+    margin: 15px auto;     /* Centre le cadre horizontalement */
+    width: fit-content;    /* Le cadre s'adapte à la largeur de l'image */
+    max-width: 100%;       /* L'image ne dépasse jamais le bloc parent */
+    height: auto;          /* La hauteur s'ajuste pour garder les proportions */
+    max-height: 300px;     /* Optionnel : limite la hauteur pour rester élégant */
     border: 2px solid var(--amber-glow);
-    display: block;    /* Obligatoire pour le centrage */
-    margin: 15px auto; /* 15px en haut/bas, 'auto' centre gauche/droite */
+    background-color: var(--white); /* Couleur de fond si l'image est transparente */
 }
 
 
