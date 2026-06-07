@@ -25,6 +25,7 @@ main {
     border-radius: 8px;
 }
 
+/* Header */
 header {
     font-family: 'Oswald', sans-serif;
     background-color: var(--dusk-blue);
@@ -33,7 +34,8 @@ header {
     padding: 20px;
 }
 
-h1, h2, h3, h4 {
+/* Titres Globaux */
+h1, h2 {
     font-family: 'Oswald', sans-serif;
     background-color: var(--dusk-blue);
     color: var(--white);
@@ -42,33 +44,36 @@ h1, h2, h3, h4 {
     border-radius: 8px 8px 0 0;
 }
 
-main > section > h2 {
-    margin-bottom: 40px;
+/* Titres dans .projet-bloc (h3, h4) */
+.projet-bloc h3, .projet-bloc h4 {
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--white);
+    color: var(--prussian-blue);
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Contenu dans .projet-bloc (p, ul, ol) */
+.projet-bloc p, .projet-bloc ul, .projet-bloc ol {
+    background-color: var(--white);
+    color: var(--prussian-blue);
+    padding: 10px 10px 10px 40px;
+    margin: 0;
+    text-align: left;
+}
+
+/* Arrondi uniquement sur le dernier élément du bloc */
+.projet-bloc p:last-of-type, .projet-bloc ul:last-of-type, .projet-bloc ol:last-of-type {
+    border-radius: 0 0 8px 8px;
 }
 
 .projet-bloc {
     margin-bottom: 40px;
 }
 
-.projet-bloc h2 {
-    border-radius: 8px 8px 0 0;
-}
-
-.projet-bloc h3 {
-    border-radius: 8px 8px 0 0;
-}
-
-.projet-bloc p {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--white);
-    color: var(--prussian-blue);
-    padding: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
-    border-radius: 0 0 8px 8px;
-    text-align: left;
-}
-
+/* Liens */
 a {
     display: inline-block;
     background-color: var(--amber-glow);
@@ -94,35 +99,4 @@ img {
     object-fit: contain;
     border: 2px solid var(--amber-glow);
     background-color: transparent;
-}
-h3 {
-    font-family: 'Oswald', sans-serif;
-    color: var(--prussian-blue);
-    background-color: var(--white);
-    margin: 10px;
-    padding: 10px;
-    border-radius: 8px 8px 0 0;
-    text-align: left;
-}
-h4 {
-    font-family: 'Oswald', sans-serif;
-    color: var(--prussian-blue);
-    background-color: var(--white);
-    margin: 10px;
-    padding: 10px;
-    border-radius: 8px 8px 0 0;
-    text-align: left;
-}
-
-ul, ol {
-    background-color: var(--white);
-    color: #000000;
-    padding: 10px 10px 10px 40px;
-    margin: 0;
-    border-radius: 0 0 8px 8px;
-    text-align: left;
-}
-
-li {
-    margin-bottom: 5px;
 }
