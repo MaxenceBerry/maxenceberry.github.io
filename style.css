@@ -44,36 +44,36 @@ h1, h2 {
     border-radius: 8px 8px 0 0;
 }
 
-/* Titres dans .projet-bloc (h3, h4) */
-.projet-bloc h3, .projet-bloc h4 {
-    font-family: 'Oswald', sans-serif;
+/* Bloc conteneur pour tout le contenu des projets */
+.projet-content {
     background-color: var(--white);
     color: var(--prussian-blue);
-    margin: 0;
-    padding: 10px;
-    text-align: left;
-}
-
-/* Contenu dans .projet-bloc (p, ul, ol) */
-.projet-bloc p, .projet-bloc ul, .projet-bloc ol {
-    background-color: var(--white);
-    color: var(--prussian-blue);
-    padding: 10px 10px 10px 40px;
-    margin: 0;
-    text-align: left;
-}
-
-/* Arrondi uniquement sur le dernier élément du bloc */
-.projet-bloc p:last-of-type, .projet-bloc ul:last-of-type, .projet-bloc ol:last-of-type {
+    padding: 20px;
     border-radius: 0 0 8px 8px;
+    text-align: left;
+    margin-bottom: 40px; /* Espace entre les projets */
 }
 
-.projet-bloc {
-    margin-bottom: 40px;
+/* Titres internes aux blocs */
+.projet-content h3, .projet-content h4 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--prussian-blue);
+    margin: 20px 0 10px 0;
+    padding: 0;
 }
 
-/* Liens */
-a {
+/* Contenu interne */
+.projet-content p {
+    margin: 0 0 15px 0;
+}
+
+.projet-content ul, .projet-content ol {
+    margin: 0 0 15px 20px;
+    padding: 0;
+}
+
+/* Liens (Boutons) */
+.projet-content a {
     display: inline-block;
     background-color: var(--amber-glow);
     color: var(--prussian-blue);
@@ -81,7 +81,17 @@ a {
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
-    margin: 20px 0;
+    margin: 10px 0;
+}
+
+/* Images */
+.projet-content img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid var(--amber-glow);
+    display: block;
+    margin: 15px 0;
 }
 
 /* Grille images */
@@ -90,12 +100,4 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
     margin-top: 20px;
-}
-
-img {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
-    border: 2px solid var(--amber-glow);
-    background-color: var(--white);
 }
