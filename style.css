@@ -68,6 +68,7 @@ main > section > h2 {
     margin-top: 0;
     margin-bottom: 0;
     border-radius: 0 0 8px 8px;
+    text-align: left;
 }
 
 /* Lien orange (amber-glow) rétabli */
@@ -99,6 +100,15 @@ img {
 }
 /* --- Mise à jour pour les H3 --- */
 h3 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--prussian-blue); /* Couleur demandée */
+    background-color: var(--white); /* Fond blanc */
+    margin: 0;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    text-align: left; /* Optionnel : pour aligner avec le texte des paragraphes */
+}
+h4 {
     font-family: 'Oswald', sans-serif;
     color: var(--prussian-blue); /* Couleur demandée */
     background-color: var(--white); /* Fond blanc */
