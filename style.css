@@ -34,7 +34,7 @@ header {
     padding: 20px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Oswald', sans-serif;
     background-color: var(--dusk-blue);
     color: var(--white);
@@ -95,7 +95,7 @@ img {
     width: 100%;
     height: 200px;
     object-fit: contain;   /* Garde l'image entière sans zoom */
-    border: 2px solid var(--dusk-blue);
+    border: 2px solid var(--amber-glow);
     background-color: transparent; /* L'image affiche le fond du main à travers */
 }
 /* --- Mise à jour pour les H3 --- */
