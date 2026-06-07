@@ -52,7 +52,6 @@ h1, h2 {
     margin: 0;
     padding: 10px;
     text-align: left;
-    border-radius: 8px 8px 0 0;
 }
 
 /* Contenu dans .projet-bloc (p, ul, ol) */
@@ -98,5 +97,5 @@ img {
     height: 200px;
     object-fit: contain;
     border: 2px solid var(--amber-glow);
-    background-color: transparent;
+    background-color: var(--white);
 }
