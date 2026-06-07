@@ -1,3 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --amber-glow: #f99e1a;
+    --powder-blue: #a8b8cf;
+    --dusk-blue: #405275;
+    --prussian-blue: #0e1326;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--powder-blue);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Bordure fine uniquement sur le main */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--powder-blue);
+    border: 2px solid var(--dusk-blue); /* Bordure fine ici */
+    border-radius: 8px;
+}
+
+header {
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--dusk-blue);
+    color: var(--white);
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--dusk-blue);
+    color: var(--white);
+    margin: 0;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+main > section > h2 {
+    margin-bottom: 40px; /* Ajoute l'espace souhaité après ce titre spécifique */
+}
+
+/* Espacement et présentation des blocs */
+.projet-bloc {
+    margin-bottom: 40px; /* Espace entre chaque bloc projet */
+}
+
+.projet-bloc h2 {
+    border-radius: 8px 8px 0 0;
+}
+
+.projet-bloc h3 {
+    border-radius: 8px 8px 0 0;
+}
+
+.projet-bloc p {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+    color: var(--prussian-blue);
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Lien orange (amber-glow) rétabli */
+a {
+    display: inline-block;
+    background-color: var(--amber-glow);
+    color: var(--prussian-blue);
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+/* Grille images */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;   /* Garde l'image entière sans zoom */
+    border: 2px solid var(--dusk-blue);
+    background-color: transparent; /* L'image affiche le fond du main à travers */
+}
 /* --- Mise à jour pour les H3 --- */
 h3 {
     font-family: 'Oswald', sans-serif;
