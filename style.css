@@ -46,8 +46,8 @@ h1, h2 {
 
 body h1 {
     font-family: 'Oswald', sans-serif;
-    background-color: var(--white); /* Un fond blanc propre pour contraster */
-    color: var(--dusk-blue);        /* Un bleu plus profond que le prussian */
+    background-color: var(--dodger-blue); /* Un fond blanc propre pour contraster */
+    color: var(--white);        /* Un bleu plus profond que le prussian */
     text-align: center;
     margin: 0 0 20px 0;             /* Pas de marge externe pour toucher les bords du main */
     padding: 30px 10px;             /* Plus d'espace pour le rendre majestueux */
