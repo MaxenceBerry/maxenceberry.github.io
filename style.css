@@ -45,8 +45,9 @@ h1, h2 {
 }
 
 body h1 {
+    margin-bottom: 20px;
     font-family: 'Oswald', sans-serif;
-    background-color: var(--amber-glow); /* Un fond blanc propre pour contraster */
+    background-color: var(--prussian-blue); /* Un fond blanc propre pour contraster */
     color: var(--white);        /* Un bleu plus profond que le prussian */
     text-align: center;
     /*margin: 0 0 20px 0;*/             /* Pas de marge externe pour toucher les bords du main */
@@ -66,8 +67,6 @@ body h1 {
 
 /* Le fond blanc pour tout ce qui suit le H2 */
 .projet-content {
-    margin-left: 20px;
-    margin-right: 20px;
     background-color: var(--white);
     color: var(--prussian-blue);
     padding: 20px;
