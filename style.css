@@ -82,7 +82,7 @@ h1, h2 {
 .btn-main{
     display: inline-block;
     background-color: var(--amber-glow);
-    color: var(--prussian-blue);
+    color: var(--white);
     padding: 8px 16px;
     text-decoration: none;
     font-weight: bold;
@@ -100,6 +100,20 @@ h1, h2 {
     border-radius: 4px;
     margin: 10px 0;
     text-align: center;
+}
+
+/* --- Effet Hover pour btn-main --- */
+.btn-main:hover {
+    background-color: var(--powder-blue);
+    color: var(--amber-glow);
+    border: 1px solid var(--amber-glow); /* Optionnel : ajoute un léger contour pour le contraste */
+}
+
+/* --- Effet Hover pour btn-secondary --- */
+.btn-secondary:hover {
+    background-color: var(--powder-blue);
+    color: var(--dodger-blue);
+    border: 1px solid var(--dodger-blue); /* Optionnel : ajoute un léger contour pour le contraste */
 }
 
 /* Suppression du style par défaut pour éviter les conflits */
