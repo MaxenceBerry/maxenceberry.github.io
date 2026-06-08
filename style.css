@@ -102,23 +102,41 @@ h1, h2 {
     text-align: center;
 }
 
+/* Suppression du style par défaut pour éviter les conflits */
 img {
-    display: block;        /* Permet le centrage */
-    margin: 15px auto;     /* Centre le cadre horizontalement */
-    width: fit-content;    /* Le cadre s'adapte à la largeur de l'image */
-    max-width: 100%;       /* L'image ne dépasse jamais le bloc parent */
-    height: auto;          /* La hauteur s'ajuste pour garder les proportions */
-    max-height: 300px;     /* Optionnel : limite la hauteur pour rester élégant */
-    border: 2px solid var(--amber-glow);
-    background-color: var(--white); /* Couleur de fond si l'image est transparente */
+    border: none;
+    background-color: transparent;
+    display: block;
 }
 
+/* Base du cadre conteneur */
+.img-landscape, .img-portrait {
+    background-color: var(--powder-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Coupe ce qui dépasse */
+    margin: 15px auto;
+}
 
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
+/* Format Landscape (16/9) */
+.img-landscape {
+    width: 480px;
+    height: 270px;
+    max-width: 100%;
+}
+
+/* Format Portrait (inversion du ratio) */
+.img-portrait {
+    width: 270px;
+    height: 480px;
+}
+
+/* L'image elle-même à l'intérieur du cadre */
+.img-landscape img, .img-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* L'image est réduite pour rentrer sans être coupée */
 }
 
 .menu ul {
