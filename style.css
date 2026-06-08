@@ -20,7 +20,7 @@ body {
 main {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    /* padding: 20px;*/
     background-color: var(--powder-blue);
     border: 2px solid var(--dusk-blue);
     border-radius: 8px;
@@ -49,7 +49,7 @@ body h1 {
     background-color: var(--amber-glow); /* Un fond blanc propre pour contraster */
     color: var(--white);        /* Un bleu plus profond que le prussian */
     text-align: center;
-    margin: 0 0 20px 0;             /* Pas de marge externe pour toucher les bords du main */
+    /*margin: 0 0 20px 0;*/             /* Pas de marge externe pour toucher les bords du main */
     padding: 30px 10px;             /* Plus d'espace pour le rendre majestueux */
     border-bottom: 4px solid var(--dodger-blue); /* Une ligne ambre pour souligner le nom */
     border-radius: 8px 8px 0 0;     /* Arrondi pour matcher ton style */
@@ -59,11 +59,15 @@ body h1 {
 
 /* Nouveau : Le bloc global qui contient le Titre H2 + le contenu */
 .projet-bloc {
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 40px;
 }
 
 /* Le fond blanc pour tout ce qui suit le H2 */
 .projet-content {
+    margin-left: 20px;
+    margin-right: 20px;
     background-color: var(--white);
     color: var(--prussian-blue);
     padding: 20px;
