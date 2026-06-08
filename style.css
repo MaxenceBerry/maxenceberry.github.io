@@ -120,3 +120,31 @@ img {
     gap: 15px;
     margin-top: 20px;
 }
+
+.menu ul {
+    list-style: none;         /* Enlève les puces */
+    padding: 0;               /* Enlève le padding par défaut */
+    margin: 20px 0 0 0;       /* Espace par rapport au header */
+    display: flex;            /* Aligne les éléments horizontalement */
+    justify-content: center;  /* Centre les liens */
+    gap: 10px;                /* Espace entre les liens */
+    background-color: var(--dusk-blue); /* Fond de la barre entière */
+    padding: 10px;            /* Petit padding interne */
+}
+
+.menu ul li a {
+    display: block;           /* Permet au fond de couvrir toute la zone du lien */
+    color: var(--dodger-blue);/* Texte en dodger-blue */
+    background-color: transparent; /* Fond transparent par défaut */
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Rend le changement de couleur fluide */
+}
+
+/* --- Effet Hover --- */
+.menu ul li a:hover {
+    background-color: var(--dodger-blue); /* Fond devient dodger-blue */
+    color: var(--white);                  /* Texte devient blanc */
+}
