@@ -46,11 +46,15 @@ h1, h2 {
 
 body h1 {
     font-family: 'Oswald', sans-serif;
-    background-color: transparent;
-    color: var(--prussian-blue);
+    background-color: var(--white); /* Un fond blanc propre pour contraster */
+    color: var(--dusk-blue);        /* Un bleu plus profond que le prussian */
     text-align: center;
-    margin: 10px 0;
-    padding: 10px;
+    margin: 0 0 20px 0;             /* Pas de marge externe pour toucher les bords du main */
+    padding: 30px 10px;             /* Plus d'espace pour le rendre majestueux */
+    border-bottom: 4px solid var(--amber-glow); /* Une ligne ambre pour souligner le nom */
+    border-radius: 8px 8px 0 0;     /* Arrondi pour matcher ton style */
+    text-transform: uppercase;      /* Donne un aspect "Logo" */
+    letter-spacing: 2px;
 }
 
 /* Nouveau : Le bloc global qui contient le Titre H2 + le contenu */
@@ -115,7 +119,7 @@ body h1 {
 .btn-main:hover {
     background-color: var(--white);
     color: var(--amber-glow);
-    border: 1px solid var(--prussian-blue); /* Optionnel : ajoute un léger contour pour le contraste */
+    border: 1px solid var(--amber-glow); /* Optionnel : ajoute un léger contour pour le contraste */
 }
 
 /* --- Effet Hover pour btn-secondary --- */
